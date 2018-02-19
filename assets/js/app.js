@@ -35,6 +35,29 @@ function trivia() {
       <button type="button" id="falso">FALSE</button>
       <button type="button" id="verdadero">TRUE</button>`;
       play.innerHTML = html;
+
+      const btnFalso = document.getElementById('falso');
+      const btnVerd = document.getElementById('verdadero');
+
+      btnFalso.addEventListener('click', function(btnF){
+        if(correct==='False') {
+          alert('Respuesta Correcta!')
+        }
+        else{
+          alert('Buuu! Respuesta Incorrecta!')
+        }
+      });
+
+      btnVerd.addEventListener('click', function(btnV){
+        if(correct==='True') {
+          alert('Respuesta Correcta!')
+        }
+        else{
+          alert('Buuu! Respuesta Incorrecta!')
+        }
+      })
+
+
     });
   start.remove();
   welcome.remove();
